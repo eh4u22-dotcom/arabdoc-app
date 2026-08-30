@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: 'Cairo', 'Tajawal', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background: radial-gradient(circle at 0% 0%, #e0f2fe 0%, #f0f9ff 50%, #ffffff 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #1e293b;
+  }
+}
+
+/* Frosted Glass custom utilities */
+.frosted-canvas {
+  background: radial-gradient(circle at 10% 10%, #e0f2fe 0%, #f0f9ff 45%, #f8fafc 100%);
+  background-attachment: fixed;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 20px -2px rgba(186, 230, 253, 0.15), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.glass-card-solid {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(219, 234, 254, 0.8);
+  box-shadow: 0 10px 30px -5px rgba(224, 242, 254, 0.35);
+}
+
+.glass-sidebar {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-left: 1px solid rgba(224, 242, 254, 0.85);
+}
+
+.glass-header {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(224, 242, 254, 0.8);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(219, 234, 254, 0.9);
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.glass-pill {
+  background: rgba(239, 246, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(191, 219, 254, 0.7);
+}
+
+.glass-modal {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 25px 50px -12px rgba(14, 116, 144, 0.15);
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(240, 249, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(147, 197, 253, 0.6);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(96, 165, 250, 0.8);
+}
+
+/* Print Styles for Medical Prescriptions & Invoices */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "ArabDoc | نظام السجلات الطبية وإدارة العيادات",
+  "description": "منصة سحابية طبية شاملة لإدارة المرضى، المتابعة الزمنية للزيارات، قياس تطور الحالة الصحية، تنظيم الأدوية والمدفوعات لجميع التخصصات الطبية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
